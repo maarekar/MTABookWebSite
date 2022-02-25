@@ -1,0 +1,24 @@
+{
+  "name": "users-api",
+  "version": "0.0.001",
+  "description": "JavaScript Course API Sample",
+  "main": "users.js",
+  "author": {
+    "name": "Ilan Zisser",
+    "email": "ilanzisser@gmail.com"
+  },
+  "scripts": {},
+  "license": "TBD",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.1",
+    "http-status-codes": "^2.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "node-fetch": "^2.6.6",
+    "react": "^17.0.2",
+    "request": "^2.88.2"
+  }
+}

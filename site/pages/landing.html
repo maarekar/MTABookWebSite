@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Landing Page</title>
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+	<script src="../js/ReactButton.js"></script>
+	<script src="../js/Landing.js"></script>
+	<link rel="stylesheet" type='text/css' href="../css/buttons.css">
+	<link rel="stylesheet" type='text/css' href="../css/form.css">
+</head>
+
+<body>
+	<div id='sample-container'></id>
+
+</body>
+
+<script>
+
+const domContainer = document.querySelector('#sample-container');
+ReactDOM.render( React.createElement(Landing, null), domContainer);
+
+
+
+</script>
+
+
+</html>

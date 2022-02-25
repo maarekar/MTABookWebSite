@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>About Page</title>
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+	<script src="../js/ReactButton.js"></script>
+	<script src="../js/Logout.js"></script>
+	<script src="../js/NavigationBar.js"></script>
+	<link rel="stylesheet" type='text/css' href="../css/navigationBar.css">
+	<link rel="stylesheet" type='text/css' href="../css/buttons.css">
+	<link rel="stylesheet" type='text/css' href="../css/home.css">
+	<link rel="stylesheet" type='text/css' href="../css/about.css">
+</head>
+
+<body>
+
+	<div id='sample-container'></div>
+	<span id="about">
+		MTABook 19/02/2022<br>
+		Exercice 3 in JS Course<br>
+		Arnaud Maarek, 342615879, arnaudmaarek@hotmail.com<br>
+		Shai Levi, 204124234, shailevi23@gmail.com<br>
+
+		<!-- External Libraries:
+
+		- jsonwebtoken
+		We used jsonwebtoken in order to generate an encrypted token to each user when he logged in. The token is valid
+		10 minutes. We save this token and use it in the header of each request of this specific user. For each request,
+		we checked if the token is available or not.
+		Furthermore, we keep a dictionary of tokens to know if the token is valid. Indeed, when a user logged out, the
+		token is no longer valid.
+
+		- bcrypt
+		We also used bcrypt in order to encrypt the password of the user by using hash and salt to prevent dictionary
+		attacks.
+
+
+
+		Database:
+
+		Our database is local json files.
+		We saved the admin user in the file "users.json". We never delete him from the file. When we run the
+		application, we read the admin from the file.
+
+		NOTE: If you want to change the database files, do not delete "[]". -->
+	</span>
+
+</body>
+
+<script>
+
+	const domContainer = document.querySelector('#sample-container');
+	ReactDOM.render(React.createElement(NavigationBar), domContainer);
+
+
+</script>
+
+
+</html>

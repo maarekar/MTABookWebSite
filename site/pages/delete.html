@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Admin Page - Delete Users</title>
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+	<script src="../js/ReactButton.js"></script>
+	<script src="../js/Logout.js"></script>
+	<script src="../js/Delete.js"></script>
+	<script src="../js/NavigationBar.js"></script>
+	<link rel="stylesheet" type='text/css' href="../css/navigationBar.css">
+	<link rel="stylesheet" type='text/css' href="../css/writeBox.css">
+	<link rel="stylesheet" type='text/css' href="../css/buttons.css">
+	<link rel="stylesheet" type='text/css' href="../css/home.css">
+	<link rel="stylesheet" type='text/css' href="../css/users.css">
+</head>
+
+<body>
+
+	<div id='sample-container'></id>
+
+</body>
+
+<script>
+
+const domContainer = document.querySelector('#sample-container');
+ReactDOM.render( React.createElement("div", null, [React.createElement(NavigationBar),
+												React.createElement(Delete)]),
+												 domContainer);
+
+
+
+</script>
+
+
+</html>
